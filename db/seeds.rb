@@ -9,5 +9,5 @@
 require 'faker'
 
 10.times do |_i|
-  p Article.create(title: Faker::Movie.title, content: Faker::Movie.quote)
+  p Article.create(title: Faker::Movie.title, content: Faker::Lorem.paragraph(sentence_count: 25))
 end
